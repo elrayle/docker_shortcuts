@@ -1,0 +1,8 @@
+#! /bin/bash
+echo "Build a docker composition based on docker-compose.yml"
+echo "   NOTE: Containers do not run with build. See dcpup"
+echo " "
+CMD="docker-compose build"
+echo "$CMD"
+$CMD
+

@@ -1,0 +1,7 @@
+#! /bin/bash
+echo 'List all docker containers running or not'
+echo " "
+CMD="docker container ls -a"
+echo "$CMD"
+$CMD
+

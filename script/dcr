@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Execute 'docker container run $@' command appending all arguments with $@"
+echo " "
+CMD="docker container run $@"
+echo "$CMD"
+$CMD
+

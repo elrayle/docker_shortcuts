@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Docker official help for 'docker container run' commands"
+echo " "
+CMD="docker container run --help"
+echo "$CMD"
+$CMD
+

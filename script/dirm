@@ -1,0 +1,8 @@
+#! /bin/bash
+echo "Remove a docker image given $1=image id (e.g. 35d5)"
+echo " "
+CMD="docker image remove $1 ."
+echo "$CMD"
+$CMD
+
+

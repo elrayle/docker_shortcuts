@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Docker official help for 'docker-compose' commands"
+echo " "
+CMD="docker-compose help"
+echo "$CMD"
+$CMD
+

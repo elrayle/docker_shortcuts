@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Remove all images that do not have containers"
+echo " "
+CMD="docker image prune -a"
+echo "$CMD"
+$CMD
+

@@ -1,0 +1,25 @@
+#! /bin/bash
+echo 'List all docker images, containers, and services'
+echo ' '
+echo '------------------ '
+echo 'images'
+echo '------------------ '
+dils
+echo ' '
+echo '------------------ '
+echo 'running containers'
+echo '------------------ '
+dcrun
+echo ' '
+echo '------------------ '
+echo 'all containers'
+echo '------------------ '
+dcall
+echo ' '
+echo '------------------ '
+echo 'services'
+echo '------------------ '
+dcpls
+echo ' '
+
+

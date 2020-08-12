@@ -1,0 +1,4 @@
+#! /bin/bash
+echo 'Remove all STOPPED docker containers'
+docker container prune
+

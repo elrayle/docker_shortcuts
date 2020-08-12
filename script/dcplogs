@@ -1,0 +1,8 @@
+#! /bin/bash
+echo "Show the logs for a container from the docker composition identified by $1=name (e.g. apache)"
+echo "   NOTE: name is defined in docker-compose.yml at top level (e.g. apache:)"
+echo " "
+CMD="docker-compose logs $1"
+echo "$CMD"
+$CMD
+

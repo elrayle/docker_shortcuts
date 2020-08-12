@@ -1,0 +1,7 @@
+#! /bin/bash
+echo 'Start a container by docker assigned name (e.g. $1=sleepy_boyd) or id (e.g. $1=fb213)'
+echo " "
+CMD="docker container start $1"
+echo "$CMD"
+$CMD
+

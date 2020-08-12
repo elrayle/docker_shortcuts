@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Docker official help for 'docker image' commands"
+echo " "
+CMD="docker image help"
+echo "$CMD"
+$CMD
+

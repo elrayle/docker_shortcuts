@@ -1,0 +1,7 @@
+#! /bin/bash
+echo 'List services started by docker-compose based on services defined in docker-compose-yml'
+echo " "
+CMD="docker-compose ps"
+echo "$CMD"
+$CMD
+

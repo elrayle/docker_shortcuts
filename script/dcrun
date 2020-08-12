@@ -1,0 +1,7 @@
+#! /bin/bash
+echo 'List only running docker containers'
+echo " "
+CMD="docker container ls"
+echo "$CMD"
+$CMD
+

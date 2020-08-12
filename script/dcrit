@@ -1,0 +1,8 @@
+#! /bin/bash
+echo "Execute 'docker container run -it $@' command appending all arguments with $@"
+echo '<ctrl><D> to quit'
+echo " "
+CMD="docker container run -it $@"
+echo "$CMD"
+$CMD
+

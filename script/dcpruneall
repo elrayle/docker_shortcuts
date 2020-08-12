@@ -1,0 +1,5 @@
+#! /bin/bash
+echo 'Remove all STOPPED and RUNNING docker containers'
+dcstopall
+docker container prune
+

@@ -1,0 +1,8 @@
+#! /bin/bash
+echo 'Attach a process (e.g. $2=bash) to a running container by docker assigned name (e.g. $1=sleepy_boyd) or id (e.g. $1=fb213)'
+echo '<CTRL><P> <CTRL><Q> to detach from the container'
+echo " "
+CMD="docker container attach $1 $2"
+echo "$CMD"
+$CMD
+

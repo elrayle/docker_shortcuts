@@ -1,0 +1,8 @@
+#! /bin/bash
+echo 'Build a docker image from Dockerfile and assign $1=name/tag (e.g. elr/qa_server)'
+echo " "
+CMD="docker image build -t $1 ."
+echo "$CMD"
+$CMD
+
+

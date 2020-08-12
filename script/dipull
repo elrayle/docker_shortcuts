@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Pull a docker image from docker hub by name (e.g. solr)"
+echo " "
+CMD="docker image pull $1"
+echo "$CMD"
+$CMD
+

@@ -1,0 +1,7 @@
+#! /bin/bash
+echo "Run spec tests for docker container identified by $1=name/tag:version (e.g. $1=elr/qa_server:v1)"
+echo " "
+CMD="docker container run -it $1 rspec"
+echo "$CMD"
+$CMD
+

@@ -1,0 +1,10 @@
+#! /bin/bash
+echo "Stop running a container from the docker composition identified by $1=name (e.g. apache)."
+echo "Stop all containers defined in docker composition if name is not specified."
+echo "   NOTE: name is defined in docker-compose.yml at top level (e.g. apache:)"
+echo "   NOTE: does not remove the containers"
+echo " "
+CMD="docker-compose stop $1"
+echo "$CMD"
+$CMD
+

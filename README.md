@@ -36,3 +36,80 @@ $ source ~/.bash_profile
 $ dhelp
 ``` 
 
+## Common command combos...
+
+### Starting composition and checking what is running
+
+In a project where you have a docker-compose.yml, use the following to start all containers as described in the docker-compose.yml file.
+
+```
+dcpup
+```
+
+Check to see which images, containers, and services are loaded and running...
+
+```
+dls
+```
+
+Expect images to include all the images listed in the docker-compose.yml file
+Expect running containers to include all containers described in the docker-compose.yml file
+Expect all containers to include all loaded containers whether or not they are running.
+Expect services to include all services described in the docker-compose.yml file
+
+### Cleaning up
+
+Starting/stopping containers and building images can create a messy environment.  If you want to start fresh, do the following to completely remove all containers and images.
+
+#### Shut down compositions
+
+Check which images, container, and serices are loaded and running.
+
+```
+dls
+```
+
+Start the cleanup by using docker-compose to clean up its images and containers.
+
+```
+dcpdown
+```
+
+Check which images, container, and serices are still loaded and running.
+
+```
+dls
+```
+
+#### Remove remaining containers
+
+Stop all containers including running containers.
+
+```
+dcpruneall
+```
+
+Check all containers are stopped
+
+```
+dls
+```
+
+Expect the running containers and all containers lists to be empty.
+
+
+#### Remove images
+
+Remove all images without container (which should be all images at this point).
+
+```
+diprune
+```
+
+Check all images were removed
+
+```
+dls
+```
+
+Expect all lists to be empty.

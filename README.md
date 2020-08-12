@@ -43,13 +43,13 @@ $ dhelp
 In a project where you have a docker-compose.yml, use the following to start all containers as described in the docker-compose.yml file.
 
 ```
-dcpup
+$ dcpup
 ```
 
 Check to see which images, containers, and services are loaded and running...
 
 ```
-dls
+$ dls
 ```
 
 Expect images to include all the images listed in the docker-compose.yml file
@@ -61,24 +61,26 @@ Expect services to include all services described in the docker-compose.yml file
 
 Starting/stopping containers and building images can create a messy environment.  If you want to start fresh, do the following to completely remove all containers and images.
 
+***WARNING: This process gets rid of everything including running containers and images with containers.  I use it to clean up my dev machine when I want to start with a completely clean docker environment.***
+
 #### Shut down compositions
 
 Check which images, container, and serices are loaded and running.
 
 ```
-dls
+$ dls
 ```
 
 Start the cleanup by using docker-compose to clean up its images and containers.
 
 ```
-dcpdown
+$ dcpdown
 ```
 
 Check which images, container, and serices are still loaded and running.
 
 ```
-dls
+$ dls
 ```
 
 #### Remove remaining containers
@@ -86,13 +88,13 @@ dls
 Stop all containers including running containers.
 
 ```
-dcpruneall
+$ dcpruneall
 ```
 
 Check all containers are stopped
 
 ```
-dls
+$ dls
 ```
 
 Expect the running containers and all containers lists to be empty.
@@ -103,13 +105,13 @@ Expect the running containers and all containers lists to be empty.
 Remove all images without container (which should be all images at this point).
 
 ```
-diprune
+$ diprune
 ```
 
 Check all images were removed
 
 ```
-dls
+$ dls
 ```
 
 Expect all lists to be empty.

@@ -56,6 +56,7 @@ echo 'dcpup $1      - Build and run a container from the docker composition iden
 echo '                Build and run all containers if name is not specified.'
 echo 'dcpdown $1    - Stop running and remove a container from the docker composition identified by $1=name (e.g. apache).'
 echo '                Stop and remove all containers defined in docker composition if name is not specified.'
+echo 'dcpr $1 $2    - Run a command (e.g. $2=bash) in a docker-compose service container identified by the service name (e.g. $1=app)'
 echo 'dcpstop $1    - Stop running a container from the docker composition identified by $1=name (e.g. apache).'
 echo '                Stop all containers defined in docker composition if name is not specified.'
 echo 'dcprestart $1 - Restart a running container from the docker composition identified by $1=name (e.g. apache).'

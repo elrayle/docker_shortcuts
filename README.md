@@ -24,7 +24,7 @@ export PATH="$HOME/bin/docker_shortcuts/scripts:${PATH}"
 
 This adds the docker_shortcuts to the front of the PATH env var.  You can add it to the end if you prefer.
 
-Execute the following to activate the change to PATH
+Execute the following to activate the change to PATH.  Need to execute in each terminal window or restart terminal.
 
 ```
 $ source ~/.bash_profile

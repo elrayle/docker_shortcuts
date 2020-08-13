@@ -1,0 +1,8 @@
+#! /bin/bash
+echo 'Run a command (e.g. $2=bash) in a docker-compose service container identified by the service name (e.g. $1=app)'
+echo '<ctrl><D> to quit'
+echo " "
+CMD="docker-compose run $1 $2"
+echo "$CMD"
+$CMD
+

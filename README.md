@@ -2,6 +2,16 @@
 
 This repo contains bash script shortcuts for common Docker commands.  
 
+* [Usage](#usage)
+  * [Clone this repository](#clone-this-repository)
+  * [Add the scripts directory to your executable path](#add-the-scripts-directory-to-your-executable-path)
+  * [List all docker shortcut commands](#list-all-docker-shortcut-commands)
+* [Common command combos](#common-command-combos)
+  * [Starting composition and checking what is running](#starting-composition-and-checking-what-is-running)
+  * [Cleaning up](#cleaning-up)
+* [Resources](#resources)
+
+
 ## Usage
 
 To use...
@@ -115,3 +125,12 @@ $ dls
 ```
 
 Expect all lists to be empty.
+
+
+## Resources
+
+[Dockerizing a Rails Development Environment - Demo](https://www.youtube.com/watch?v=nZkXQjFUIgs) - Best I've found step by step intro to help you understand how Dockerfile and docker-compose.yml interrelate
+
+[Understanding Docker Build Args, Environment Variables and Docker Compose Variables](https://vsupalov.com/docker-env-vars/)
+
+

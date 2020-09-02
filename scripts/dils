@@ -1,6 +1,7 @@
 #! /bin/bash
-echo 'List docker images'
-echo " "
+echo '=============================================================='
+echo '  Images - List docker images '
+echo '=============================================================='
 CMD="docker image ls"
 echo "$CMD"
 $CMD

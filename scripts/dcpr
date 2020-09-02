@@ -5,4 +5,3 @@ echo " "
 CMD="docker-compose run $1 $2"
 echo "$CMD"
 $CMD
-

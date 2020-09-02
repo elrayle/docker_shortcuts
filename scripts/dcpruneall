@@ -3,3 +3,5 @@ echo 'Remove all STOPPED and RUNNING docker containers'
 dcstopall
 docker container prune
 
+# list all running images, containers, services, and volumes
+dls

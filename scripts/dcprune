@@ -2,3 +2,5 @@
 echo 'Remove all STOPPED docker containers'
 docker container prune
 
+# list all running images, containers, services, and volumes
+dls

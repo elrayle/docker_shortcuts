@@ -4,3 +4,5 @@ echo ' '
 echo 'docker container stop $(docker ps -a -q)'
 docker container stop $(docker ps -a -q)
 
+# list all running images, containers, services, and volumes
+dls

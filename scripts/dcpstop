@@ -8,3 +8,5 @@ CMD="docker-compose stop $1"
 echo "$CMD"
 $CMD
 
+# list all running images, containers, services, and volumes
+dls

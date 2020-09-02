@@ -2,8 +2,6 @@
 echo 'Run bash command line for docker container identified by $1=name/tag:version (e.g. $1=elr/qa_server:v1)'
 echo '<ctrl><D> to quit'
 echo " "
-CMD="docker container run -it $1 bash"
+CMD="docker-compose run $1 bash"
 echo "$CMD"
 $CMD
-
-

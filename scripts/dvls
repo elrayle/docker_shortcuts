@@ -1,8 +1,8 @@
 #! /bin/bash
 echo '=============================================================='
-echo '  Services - List services started by docker-compose'
+echo '  Volumes - List all docker volumes'
 echo '=============================================================='
-CMD="docker-compose ps"
+CMD="docker volume ls"
 echo "$CMD"
 $CMD
 

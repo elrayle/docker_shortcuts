@@ -50,7 +50,7 @@ $ dhelp
 
 ### Starting composition and checking what is running
 
-In a project where you have a docker-compose.yml, use the following to start all containers as described in the docker-compose.yml file.
+In a project where you have a docker-compose.yml, use the following to start all containers as described in the docker-compose.yml file.  This will build the images if needed.
 
 ```
 $ dcpup
